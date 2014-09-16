@@ -1009,7 +1009,7 @@ class JsdocsJava(JsdocsParser):
             # Modifiers
             '(?:(public|protected|private|static|abstract|final|transient|synchronized|native|strictfp)\s+)*'
             # Return value
-            + '(?P<retval>[a-zA-Z_$][\<\>\., a-zA-Z_$0-9]+)\s+'
+            + '(?P<retval>[a-zA-Z_$][\<\>\., a-zA-Z_$0-9]+(\w+)((\[\])*))\s+'
             # Method name
             + '(?P<name>' + self.settings['fnIdentifier'] + ')\s*'
             # Params
